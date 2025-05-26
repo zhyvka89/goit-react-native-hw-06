@@ -33,25 +33,25 @@ export default function MemberDetails(){
         <Text style={styles.birthday}>Birthday: {member.birthday}</Text>
       </View>
 
-<View>
-
-      <TouchableOpacity style={styles.listItem} onPress={handlePaymentsPress}>
-        <Text style={styles.listItemText}>Payments</Text>
-      </TouchableOpacity>
-</View>
-<View>
-
-      <TouchableOpacity style={styles.listItem} onPress={handleAttendancePress}>
-        <Text style={styles.listItemText}>Training Attendance</Text>
-      </TouchableOpacity>
-</View>
+      <View>
+        <TouchableOpacity style={styles.listItem} onPress={handlePaymentsPress}>
+          <Text style={styles.listItemText}>Payments</Text>
+        </TouchableOpacity>
+      </View>
+      <View>
+        <TouchableOpacity
+          style={styles.listItem}
+          onPress={handleAttendancePress}
+        >
+          <Text style={styles.listItemText}>Training Attendance</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    // flex: 1,
     backgroundColor: '#fff',
     padding: 20,
   },
